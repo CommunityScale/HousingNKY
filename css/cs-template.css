@@ -100,7 +100,7 @@ Table of contents
 .cover, .footer {
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-blend-mode: normal;
   padding: 50px 0;
   margin-top: 0px;
   color: white;
