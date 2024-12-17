@@ -66,7 +66,7 @@ Table of contents
   margin: 0 10%;
 }
 
-.row{
+.row {
   margin: 20px 0;
 }
 
@@ -88,7 +88,8 @@ Table of contents
 }
 
 .two-column-text {
-  column-count: 2; /* Two columns for larger screens */
+  column-count: 2;
+  /* Two columns for larger screens */
   column-gap: 1.5rem;
 }
 
@@ -97,33 +98,39 @@ Table of contents
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Special cover at the top of the page */
-.cover, .footer {
+.cover,
+.footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: normal;
   padding: 50px 0;
   margin-top: 0px;
-  color: white;
 }
 
-.cover h1, .footer h1 {
+.cover h1,
+.footer h1 {
   color: white;
   max-width: 100%;
 }
 
-.cover p, .footer p {
+.cover p {
   text-shadow: 0px 0px 2px rgba(24, 27, 30, 0.9);
 }
 
 .footer p {
   margin-bottom: 0;
+  color: black;
 }
 
-.cover a, .footer a {
+.cover p {
+  color: white;
+}
+
+.cover a {
   color: #FFCB77;
 }
 
-.cover a:hover, .footer a:hover {
+.cover a:hover {
   color: #FE6D73;
 }
 
@@ -140,7 +147,7 @@ Table of contents
   display: flex;
   align-items: center;
   border: 1px solid #C2EAFF;
-  box-shadow: 0px 1px 3px #C2EAFF ;
+  box-shadow: 0px 1px 3px #C2EAFF;
 }
 
 .insight h5 {
@@ -152,7 +159,7 @@ Table of contents
   padding: 25px;
   border-radius: 5px;
   border: 1px solid #C2EAFF;
-  box-shadow: 0px 1px 3px #C2EAFF ;
+  box-shadow: 0px 1px 3px #C2EAFF;
 }
 
 .insight-box .columns {
@@ -191,14 +198,18 @@ Table of contents
 .inline-text {
   display: flex;
   align-items: center;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
-  gap: 5px; /* Add space between all elements */
+  margin: 0;
+  /* Remove any default margin */
+  padding: 0;
+  /* Remove any default padding */
+  gap: 5px;
+  /* Add space between all elements */
   /* white-space: nowrap; Prevent line breaks */
 }
 
 .small-text {
-  font-size: 1.2rem; /* Smaller than the body font size of 1.5em */
+  font-size: 1.2rem;
+  /* Smaller than the body font size of 1.5em */
   line-height: 1.2;
 }
 
@@ -206,7 +217,8 @@ Table of contents
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  padding-top: 0px; /* Adds 20px padding to the top */
+  padding-top: 0px;
+  /* Adds 20px padding to the top */
   padding-right: 0;
   padding-bottom: 00px;
   box-sizing: border-box;
@@ -234,12 +246,16 @@ Table of contents
 }
 
 .content-size {
-  padding-top: 0px; /* Adds 20px padding to the top */
+  padding-top: 5px;
+  /* Adds 20px padding to the top */
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
   box-sizing: border-box;
-  flex: 0 0 auto; /* Does not grow or shrink, only as wide as its content */
+  flex: 0 0 auto;
+  /* Does not grow or shrink, only as wide as its content */
+  align-self: flex-start;
+  /* Ensures alignment at the top in a flex container */
 }
 
 
@@ -253,7 +269,7 @@ Table of contents
   .desktop-pages {
     display: none;
   }
-  
+
 
   .container {
     width: 90%;
@@ -279,7 +295,7 @@ Table of contents
   } */
 
   .divider-header {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .divider-header .divider-icon {
@@ -303,7 +319,7 @@ Table of contents
 
 /* For devices larger than 750px */
 @media (min-width: 750px) {
-  
+
   .desktop-pages {
     display: flex;
   }
@@ -317,7 +333,7 @@ Table of contents
   }
 
   .title {
-    display:block;
+    display: block;
   }
 
   .nav-container {
@@ -636,7 +652,7 @@ a:hover {
   /* For Safari */
   position: sticky;
   top: 0;
-  background-color: #252C31; 
+  background-color: #252C31;
   color: #FFFFFF;
   /* Dark background for visibility */
   padding: 5px 1%;
@@ -745,15 +761,25 @@ a:hover {
 }
 
 .inline-logo {
-  height: 45px; /* Slightly taller than the text */
+  height: 45px;
+  /* Slightly taller than the text */
   margin-right: 10px;
 }
 
 .inline-image {
-  height: 4rem; /* Slightly taller than the text */
-  text-decoration: none; /* Remove underline */
-  vertical-align: middle; /* Align image vertically with text */
-  border-radius: 0; /* Remove rounded corners */
+  height: 4rem;
+  /* Slightly taller than the text */
+  text-decoration: none;
+  /* Remove underline */
+  vertical-align: middle;
+  /* Align image vertically with text */
+  border-radius: 0;
+  /* Remove rounded corners */
+}
+
+.no-rounded-edges {
+  border-radius: 0 !important;
+  /* Force override any inherited styles */
 }
 
 /* Buttons
@@ -776,7 +802,7 @@ input[type="button"] {
   font-weight: 700;
   line-height: 38px;
   text-decoration: none;
-  
+
   white-space: nowrap;
   background-color: #FFCB77;
   border-radius: 4px;
@@ -784,7 +810,7 @@ input[type="button"] {
   border-bottom: 2px solid #be951c;
   cursor: pointer;
   box-sizing: border-box;
-  
+
   transition: all 0.2s ease-in-out;
 }
 
@@ -959,7 +985,9 @@ pre>code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* highlight an entire row, cell, or header by applying the "important" class */
-tr.important td, th.important, td.important {
+tr.important td,
+th.important,
+td.important {
   font-weight: 900;
   background-color: #FFEDB7;
 }
@@ -990,42 +1018,71 @@ td {
 /* Just specify which column numbers you want center or right aligned, i.e. if you want column 2 & 7 right aligned, and 3 centered, just do:
 <table class="tr2 tc3 tr7"> */
 
-.tr1 td:nth-child(1), .tr1 th:nth-child(1),
-.tr2 td:nth-child(2), .tr2 th:nth-child(2),
-.tr3 td:nth-child(3), .tr3 th:nth-child(3),
-.tr4 td:nth-child(4), .tr4 th:nth-child(4),
-.tr5 td:nth-child(5), .tr5 th:nth-child(5),
-.tr6 td:nth-child(6), .tr6 th:nth-child(6),
-.tr7 td:nth-child(7), .tr7 th:nth-child(7),
-.tr8 td:nth-child(8), .tr8 th:nth-child(8),
-.tr9 td:nth-child(9), .tr9 th:nth-child(9) { text-align:right }
+.tr1 td:nth-child(1),
+.tr1 th:nth-child(1),
+.tr2 td:nth-child(2),
+.tr2 th:nth-child(2),
+.tr3 td:nth-child(3),
+.tr3 th:nth-child(3),
+.tr4 td:nth-child(4),
+.tr4 th:nth-child(4),
+.tr5 td:nth-child(5),
+.tr5 th:nth-child(5),
+.tr6 td:nth-child(6),
+.tr6 th:nth-child(6),
+.tr7 td:nth-child(7),
+.tr7 th:nth-child(7),
+.tr8 td:nth-child(8),
+.tr8 th:nth-child(8),
+.tr9 td:nth-child(9),
+.tr9 th:nth-child(9) {
+  text-align: right
+}
 
-.tc1 td:nth-child(1), .tc1 th:nth-child(1),
-.tc2 td:nth-child(2), .tc2 th:nth-child(2),
-.tc3 td:nth-child(3), .tc3 th:nth-child(3),
-.tc4 td:nth-child(4), .tc4 th:nth-child(4),
-.tc5 td:nth-child(5), .tc5 th:nth-child(5),
-.tc6 td:nth-child(6), .tc6 th:nth-child(6),
-.tc7 td:nth-child(7), .tc7 th:nth-child(7),
-.tc8 td:nth-child(8), .tc8 th:nth-child(8),
-.tc9 td:nth-child(9), .tc9 th:nth-child(9) { text-align:center }
+.tc1 td:nth-child(1),
+.tc1 th:nth-child(1),
+.tc2 td:nth-child(2),
+.tc2 th:nth-child(2),
+.tc3 td:nth-child(3),
+.tc3 th:nth-child(3),
+.tc4 td:nth-child(4),
+.tc4 th:nth-child(4),
+.tc5 td:nth-child(5),
+.tc5 th:nth-child(5),
+.tc6 td:nth-child(6),
+.tc6 th:nth-child(6),
+.tc7 td:nth-child(7),
+.tc7 th:nth-child(7),
+.tc8 td:nth-child(8),
+.tc8 th:nth-child(8),
+.tc9 td:nth-child(9),
+.tc9 th:nth-child(9) {
+  text-align: center
+}
 
 
 /* Horizontal scrolling tables */
 .scroll-container {
-  width: 100%; /* Adjust width as needed */
-  overflow-x: auto; /* Enables horizontal scrolling */
-  white-space: nowrap; /* Prevents content from wrapping to a new line */
-  }
+  width: 100%;
+  /* Adjust width as needed */
+  overflow-x: auto;
+  /* Enables horizontal scrolling */
+  white-space: nowrap;
+  /* Prevents content from wrapping to a new line */
+}
 
 .scroll-content {
-  display: inline-block; /* Keeps content in a single line */
-  width: auto; /* Example width to show scrolling, adjust as needed */
+  display: inline-block;
+  /* Keeps content in a single line */
+  width: auto;
+  /* Example width to show scrolling, adjust as needed */
 }
 
 table {
-  width: auto; /* Ensures the table takes the width of its content */
-  border-collapse: collapse; /* Ensures table borders collapse to remove extra space */
+  width: auto;
+  /* Ensures the table takes the width of its content */
+  border-collapse: collapse;
+  /* Ensures table borders collapse to remove extra space */
 }
 
 /* Spacing
@@ -1121,27 +1178,28 @@ there.
 
 @media (max-width: 750px) {
   .two-column-text {
-    column-count: 1; /* Single column for mobile */
+    column-count: 1;
+    /* Single column for mobile */
 
-  .icon {
-    display: none;
+    .icon {
+      display: none;
+    }
+
+    .insight {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
-  .insight {
-    display:flex;
-    flex-direction: column;
-  }
-}
+  /* Larger than desktop */
+  @media (min-width: 1000px) {}
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {}
 
 
 
-/*
+  /*
 * Colophon
 * Content
 * CommunityScale LLC
