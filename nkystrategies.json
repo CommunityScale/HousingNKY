@@ -1,0 +1,352 @@
+[
+  {
+    "Theme": "Address and prevent neighborhood blight",
+    "Strategy": "01. Proactive Code Enforcement:\nPursue proactive Code Enforcement to avoid demolition by neglect. Fix buildings and put them back on the market.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Address and prevent neighborhood blight",
+    "Strategy": "02. Short-Term Rental Partnerships:\nEstablish creative partnerships with short-term rentals when they have vacancies.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Address and prevent neighborhood blight",
+    "Strategy": "03. Nonprofit Property Acquisition:\nAllow nonprofit developers first right of refusal for properties under foreclosure auction or tax lien sales.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Building permits and inspections",
+    "Strategy": "04. Expedited Permitting Process:\nWork with building departments and planning commissions to identify expedient and cost effective options for permitting and code enforcement.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Building permits and inspections",
+    "Strategy": "05. Building Technology Innovation:\nShare information about and encourage new building technologies when appropriate.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Building permits and inspections",
+    "Strategy": "06. Energy Code Cost Review:\nAs 2021 national uniform energy, electric and building codes are being considered, ensure the review considers cost impact on housing.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Building permits and inspections",
+    "Strategy": "07. Property Assessment Deferral:\nConsider working with Property Valuation Administrators on policy that delays increased property assessments on unsold lot inventories in larger development projects until they are sold.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Enhance communication and awareness",
+    "Strategy": "08. Stakeholder Idea Sharing:\nOrganize and align education, engagement and sharing of ideas between local officials, landlords​, employers and nonprofit organizations.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Enhance communication and awareness",
+    "Strategy": "09. Landlord Property Inventory:\nMaintain a landlord contact list and vacant property inventory to foster the connection between available properties and tenants in need of housing at all price points.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Enhance communication and awareness",
+    "Strategy": "10. Local Official Input:\nSurvey local officials for their input and appetite for new approaches.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Enhance communication and awareness",
+    "Strategy": "11. Section 8 Awareness Campaign:\nIncrease community education about how HUD Section 8 Housing Choice Vouchers can be used for the purpose of decrease negative stereotypes and increase utilization.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Community engagement",
+    "Strategy": "12. Development Agencies Education:\nContinue efforts to educate elected officials, planning commissioners and the public on roles of various agencies, vocabulary on development types, etc.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Community engagement",
+    "Strategy": "13. Performance Indicator Tracking:\nEstablish measurables and communication process of Key Performance Indicators in addressing housing gaps in the region.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Homeownership assistance programs",
+    "Strategy": "14. First-Time Homeownership Support:\nExplore ways to maximize existing support and/or establish new funding for first-time homeownership or homeownership after number of years not owning a home",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Homeownership assistance programs",
+    "Strategy": "15. Homeowner Downsizing Assistance:\nConsider support for access to capital to help current homeowners to downsize into smaller or more physically accessible living options to meet current desire or needs.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Homeownership assistance programs",
+    "Strategy": "16. Local Housing Trust Fund:\nEstablish a local Housing Trust Fund – that could encourage and incentivize the purchase or renovation of properties (single and multi-family) that could preserve affordability and stabilize rents.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Homeownership assistance programs",
+    "Strategy": "17. Low-Income Housing Credits:\nIncrease direct funding for housing development programs including low income tax credits.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Homeownership assistance programs",
+    "Strategy": "18. Utility Assistance Expansion:\nConsider state support for additional weatherization/utility assistance funds for use by landlords and homeowners through Northern Kentucky Community Action Commission (NKCAC). Investing on keeping people in their homes.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Public housing effectiveness",
+    "Strategy": "19. Landlord Participation Incentives:\nConsider establishment of incentives within housing choice voucher programs to encourage landlord participation in subsidized housing.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Public housing effectiveness",
+    "Strategy": "20. Tenant-Landlord Risk Mitigation:\nConsider establishment of risk mitigation fund within housing choice voucher programs or through a local housing trust fund to support landlords and tenants.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Public housing effectiveness",
+    "Strategy": "21. Family Self-Sufficiency Program:\nIncrease local access to / availability of HUD Family Self Sufficiency (FSS) program to help mitigate the Cliff Effect.",
+    "Strategies by housing type": "Housing maintenance",
+    "Strategies by lead partner": "Federal",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Public housing effectiveness",
+    "Strategy": "22. Project-based housing choice vouchers:\nSupport the development of new income-aligned housing units for the local workforce and their families or for the creation of senior housing through the use of subsidies such as project-based housing choice vouchers.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "23. Missing Middle Housing Strategy:\nAddress the rise in demand for missing middle housing units by exploring ways to reduce development costs and barriers.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "24. Creative Zoning Approaches:\nExplore creative zoning approaches that result in increased housing supply.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "25. Reduced Parking Requirements:\nEncourage mixed-uses and flexibility for community mobility and less car reliance. Parking is expensive, let's require less of it when feasible.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "26. Form-Based Zoning:\nForm-based rather than use-based zoning to encourage density and project-type variety, such as missing middle housing.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "27. Accessory Dwelling Units (ADU’s):\nAllow by right (preferred) or conditional use to encourage family members co-locating on same property and free up existing housing stock while also developing controls to moderate short term rental conversions when necessary..",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "28. Streamlined Approval Process:\nStreamline the zoning and approval process to increase capacity and pace of development.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Planning and zoning",
+    "Strategy": "29. Affordable Housing Incentives:\nIncentivize housing affordability through targeted funding and density bonuses where appropriate.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "30. Regional Housing Trust Fund:\nEstablish Community Land Trust aka Housing Trust Fund that could offer gap financing through grants, low/no interest debt, or forgivable loans and/or provide funding for low to moderate income housing product or support infrastructure improvements.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "31. Development Cost Support:\nConsider offering assistance to off-set development costs such as land acquisition, street extension assistance or utility costs for projects that meet income-aligned housing goals.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "32. Update the Kentucky Affordable Housing Trust Fund:\nUpdate the $6 per real estate transaction fee that funds the Kentucky Affordable Housing Trust Fund under KRS 198A.720 to create more revenue that can be leveraged in local communities to create new housing opportunities and home repairs, particularly for people at 120% of Area Median Income (AMI) or below. Also allow for changes to project eligibility rules to provide for a wider variety of housing types (townhomes, duplexes, etc.) to be developed with these funds.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "33. HOME Fund Allocation:\nIncrease funding through HOME Investment Partnerships Program (HOME) fund allocation for consortiums based on number of cities and populations connected.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "Federal",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "34. Community Investment Credit:\nCreate a Kentucky Community Investment Credit similar to TN model. Provides a credit against the sum total of state bank deposit and franchise tax. Credit is imposed by the Franchise and Excise Tax Laws when qualified loans, qualified investments, grants, or contributions are extended to eligible housing entities for engaging in eligible low-income or senior housing activities.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "35. Innovative Housing Pilots:\nEstablish innovative housing pilot projects to explore wider variety of housing types and price points aligned with community will and monitor results. Encourage collaboration between local governments, planning entities and developers to explore new projects on properties already available for new construction.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "36. Local Capacity Leveraging:\nLeverage existing local capacity to promote and advance income-aligned housing goals through organizations such as non-profit developers, NKY Port Authority, Catalytic Fund, and others.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "37. Adaptive Reuse:\nEncourage the repurposement and adaptive reuse of existing, underutilized properties for residential projects.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "38. Tax Incentive Strategies:\nUse existing legislation/authorization to issue local incentives such as Industrial Revenue Bonds (IRBs) or use Tax Increment Financing (TIF) to reduce property tax liability to qualifying projects. or Establish incentives or requirements for income-aligned housing using tools such as tax abatements and exemptions.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "39. Public Land Allocation:\nConsider dedication of or increased ease of using publicly-owned land such as right-of-way or university land for housing.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "40. Housing Corporation Advocacy:\nIn the Kentucky Housing Corporation (KHC) Qualified Allocation Plan (QAP), advocate for NKY to be separated by County so more dollars can be brought to the region for income-aligned housing (AHTF, HOME, LIHTC), broader AMI range for projects, and re-establish the scoring formula in the QAP.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Tools and incentives",
+    "Strategy": "41. Community Development Block Grants (CDBG):\nPursue ways to allow cities and counties to apply for more than one Community Development Block Grant at a time to support projects with housing included. Expand access to CDBG funds for areas of high economic growth potential.",
+    "Strategies by housing type": "All types of housing",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Transportation and infrastructure",
+    "Strategy": "42. Transportation Project Review Coordination:\nPursue a programmatic agreement with the Kentucky Transportation Cabinet (KYTC) to ensure more timely reviews.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Transportation and infrastructure",
+    "Strategy": "43. Traffic Count Efficiency:\nConsider use of traffic counts from recent projects within a particular timeframe to avoid delays.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Local",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Transportation and infrastructure",
+    "Strategy": "44. Infrastructure Information Sharing:\nPursue a greater level of information sharing about specific projects and overall vision between KYTC, local utility providers and local communities.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Transportation and infrastructure",
+    "Strategy": "45. Local Planning Collaboration:\nWork with Kentucky Transportation Cabinet to involve local planning jurisdictions on KYTC’s encroachment and improvement requirements.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Best practices"
+  },
+  {
+    "Theme": "Transportation and infrastructure",
+    "Strategy": "46. Utility Connection Assistance:\nEstablish funding and/or enhance existing assistance with connections to public water or sewer utility for homebuyers/home owners to reduce barriers to construction and home ownership.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Workforce development",
+    "Strategy": "47. Small Developer Support:\nSupport existing and increase the number of small residential developers in the NKY housing industry in order to encourage a wider variety of housing types and price points.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Regional and non-profit",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Workforce development",
+    "Strategy": "48. Construction Trade Immigration:\nPursue a new tier of immigration work status for construction trades including licensed trades.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Policies"
+  },
+  {
+    "Theme": "Workforce development",
+    "Strategy": "49. Construction Training Funding:\nEnhance existing funding for construction and trades training by creation of additional funding for construction workforce training.",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "Any type of lead partner",
+    "Strategies by commitment": "Financing"
+  },
+  {
+    "Theme": "Workforce development",
+    "Strategy": "50. Apprenticeship Program Enhancement:\nH.R. 6285 Bipartisan Workforce Pell Act - needs amending to 26-week programming for apprenticeship",
+    "Strategies by housing type": "New construction",
+    "Strategies by lead partner": "State",
+    "Strategies by commitment": "Policies"
+  }
+]
