@@ -263,13 +263,30 @@ Table of contents
   display: flex;
 }
 
+.scrollable-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent content wrapping */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  display: block; /* Ensure the container is visible */
+}
+
+#strategy-table {
+  width: 100%; /* Ensure it takes up the container's width */
+  border-collapse: collapse; /* Remove extra spacing */
+  display: block; /* Ensure proper rendering */
+  overflow-x: auto; /* Allow table to scroll horizontally */
+}
+
+
 /* For devices less than 749px */
 @media (max-width: 749px) {
-
   .desktop-pages {
     display: none;
   }
 
+  .scrollable-container {
+    display: block; /* Ensure the container is visible */
+  }
 
   .container {
     width: 90%;

@@ -245,7 +245,8 @@
 					</tr>
 				</thead>
 			</table>
-			<div style="overflow-x: auto;">
+			<div class="scrollable-container">
+				<table id="strategy-table" class="display" style="width:100%">
 				<script>
 					document.addEventListener('DOMContentLoaded', function () {
 						fetch('nkystrategies.json')
@@ -316,6 +317,7 @@
 							});
 					});
 				</script>
+				</table>
 				
 				<style>
 					.button.button-primary.active {
