@@ -879,6 +879,33 @@ span.fa {
   margin-right: 4px;
 }
 
+/* Filter panel layout */
+.filter-panel {
+  margin: 20px 0;
+}
+
+.filter-buttons {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-header {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 750px) {
+  .filter-panel {
+    display: none; /* Hides the entire filter panel on mobile */
+  }
+}
+
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

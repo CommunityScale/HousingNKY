@@ -56,7 +56,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/cs-template.css">
 
-	<!-- Fonts / icons
+	<!-- Fonts / icons / table
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,6 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-
 
 
 	<!-- Favicon
@@ -225,34 +224,16 @@
 		</div>
 	</div>
 
-	<!-- Menu -->
-	<div class="divider" id="Menu" style="margin-top: 2%; padding-top: 2%;">
+	<!-- Menu Divider row -->
+	<div class="divider" id="Menu" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), background-repeat: no-repeat; background-size: cover">
 		<div class="container">
-			<h3>Menu of strategies</h3>
-			<div>
-				<h3>Filter strategies by housing type:</h3>
-				<button class="button button-primary" onclick="updateFilter(2, 'New construction', this)">New construction</button>
-				<button class="button button-primary" onclick="updateFilter(2, 'Housing maintenance', this)">Housing maintenance</button>
-				<button class="button button-primary" onclick="resetFilters()">All types</button>
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<h2 class="inline-text">Menu of strategies</h2>
+				</div>
+				<h5>This menu was informed by extensive community reflection, input and feedback from residents, employers, developers, financing experts, and policymakers. It is a starting point for officials to begin meaningful conversations about housing needs in their communities. These strategies are geared toward helping shape the future of housing to meet workforce demands across Northern Kentucky.
+				</h5>
 			</div>
-			
-			<div>
-				<h3>Filter strategies by lead partner:</h3>
-				<button class="button button-primary" onclick="updateFilter(3, 'Local', this)">Local</button>
-				<button class="button button-primary" onclick="updateFilter(3, 'Regional and non-profit', this)">Regional and non-profit</button>
-				<button class="button button-primary" onclick="updateFilter(3, 'State', this)">State</button>
-				<button class="button button-primary" onclick="updateFilter(3, 'Federal', this)">Federal</button>
-				<button class="button button-primary" onclick="resetFilters()">Any type of lead partner</button>
-			</div>
-			
-			<div>
-				<h3>Filter strategies by commitment:</h3>
-				<button class="button button-primary" onclick="updateFilter(4, 'Policies', this)">Policies</button>
-				<button class="button button-primary" onclick="updateFilter(4, 'Financing', this)">Financing</button>
-				<button class="button button-primary" onclick="updateFilter(4, 'Best practices', this)">Best practices</button>
-				<button class="button button-primary" onclick="resetFilters()">All commitments</button>
-			</div>
-			
 			<table id="strategy-table" class="display" style="width:100%">
 				<thead>
 					<tr>
@@ -264,89 +245,93 @@
 					</tr>
 				</thead>
 			</table>
-			
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					fetch('nkystrategies.json')
-						.then((response) => response.json())
-						.then((data) => {
-							// Initialize DataTable without pagination
-							const table = $('#strategy-table').DataTable({
-								data: data,
-								columns: [
-									{ data: 'Theme', title: 'Theme' },
-									{ data: 'Strategy', title: 'Strategy', render: function (data, type, row) {
-										if (type === 'display') {
-											const parts = data.split(':');
-											const boldPart = parts[0] + ':';
-											const rest = parts.slice(1).join(':').replace(/\\n/g, '<br>');
-											return '<strong>' + boldPart + '</strong>' + rest;
-										}
-										return data;
-									}},
-									{ data: 'Strategies by housing type', title: 'Strategies by housing type' },
-									{ data: 'Strategies by lead partner', title: 'Strategies by lead partner' },
-									{ data: 'Strategies by commitment', title: 'Strategies by commitment' },
-								],
-								paging: false, // Disable pagination
+			<div class="scrollable-container">
+				<table id="strategy-table" class="display" style="width:100%">
+				<script>
+					document.addEventListener('DOMContentLoaded', function () {
+						fetch('nkystrategies.json')
+							.then((response) => response.json())
+							.then((data) => {
+								// Initialize DataTable with responsive behavior
+								const table = $('#strategy-table').DataTable({
+									data: data,
+									columns: [
+										{ data: 'Theme', title: 'Theme' },
+										{ 
+											data: 'Strategy', 
+											title: 'Strategy', 
+											render: function (data, type, row) {
+												if (type === 'display') {
+													const parts = data.split(':');
+													const boldPart = parts[0] + ':';
+													const rest = parts.slice(1).join(':').replace(/\\n/g, '<br>');
+													return '<strong>' + boldPart + '</strong>' + rest;
+												}
+												return data;
+											} 
+										},
+										{ data: 'Strategies by housing type', title: 'Strategies by housing type' },
+										{ data: 'Strategies by lead partner', title: 'Strategies by lead partner' },
+										{ data: 'Strategies by commitment', title: 'Strategies by commitment' },
+									],
+									paging: false, // Disable pagination
+									responsive: true, // Enable responsive behavior
+								});
+				
+								const filters = {};
+				
+								// Update filter function
+								window.updateFilter = function (columnIndex, value, button) {
+									if (filters[columnIndex] === value) {
+										delete filters[columnIndex];
+										button.classList.remove('active');
+									} else {
+										filters[columnIndex] = value;
+										button.classList.add('active');
+									}
+									applyFilters();
+								};
+				
+								// Apply filters function
+								function applyFilters() {
+									for (const columnIndex in filters) {
+										table.column(columnIndex).search(filters[columnIndex]);
+									}
+									table.draw();
+								}
+				
+								// Reset filters function
+								window.resetFilters = function () {
+									for (const columnIndex in filters) {
+										table.column(columnIndex).search('');
+									}
+									for (const columnIndex in filters) {
+										delete filters[columnIndex];
+									}
+									table.draw();
+				
+									// Remove active class from all buttons
+									const buttons = document.querySelectorAll('.button.button-primary');
+									buttons.forEach(btn => btn.classList.remove('active'));
+								};
 							});
-			
-							const filters = {};
-			
-							// Update filter function
-							window.updateFilter = function (columnIndex, value, button) {
-								if (filters[columnIndex] === value) {
-									delete filters[columnIndex];
-									button.classList.remove('active');
-								} else {
-									filters[columnIndex] = value;
-									button.classList.add('active');
-								}
-								applyFilters();
-							};
-			
-							// Apply filters function
-							function applyFilters() {
-								for (const columnIndex in filters) {
-									table.column(columnIndex).search(filters[columnIndex]);
-								}
-								table.draw();
-							}
-			
-							// Reset filters function
-							window.resetFilters = function () {
-								for (const columnIndex in filters) {
-									table.column(columnIndex).search('');
-								}
-								for (const columnIndex in filters) {
-									delete filters[columnIndex];
-								}
-								table.draw();
-			
-								// Remove active class from all buttons
-								const buttons = document.querySelectorAll('.button.button-primary');
-								buttons.forEach(btn => btn.classList.remove('active'));
-							};
-						});
-				});
-			</script>
-			
-			<style>
-				.button.button-primary.active {
-					background-color: #007bff;
-					color: white;
-				}
-			</style>
-			
-			<style>
-				.button.button-primary.active {
-					background-color: #007bff;
-					color: white;
-				}
-			</style>
+					});
+				</script>
+				</table>
+				
+				<style>
+					.button.button-primary.active {
+						background-color: #007bff;
+						color: white;
+					}
+				</style>
+			</div>
+		</div>
+	</div>
 
+	<!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-	<!-- Footer -->
 	<div class="footer" style="background:linear-gradient(to right,white 80%,rgba(34, 124, 157,.1)), url(images/client/cover-image.jpg);">
 		<div class="container">
 			<div class="unresponsive" style="margin-bottom: 30px;">
