@@ -225,349 +225,413 @@
 	</div>
 
 
-<!-- Script for menu buttons -->
+	<!-- Script for menu buttons -->
 	<script>
 		const filters = {};
-	  
+
 		// Update filter function
 		window.updateFilter = function (columnIndex, value, button) {
-		  // If the same filter is clicked again, remove it (toggle off)
-		  if (filters[columnIndex] === value) {
-			delete filters[columnIndex];
-			button.classList.remove('active');
-		  } else {
-			// If there's an existing filter for that column, remove its active class
-			if (filters[columnIndex]) {
-			  const oldValue = filters[columnIndex];
-			  const oldButton = document.querySelector(
-				`.button.button-primary.active[data-column='${columnIndex}'][data-value='${oldValue}']`
-			  );
-			  if (oldButton) {
-				oldButton.classList.remove('active');
-			  }
+			// If the same filter is clicked again, remove it (toggle off)
+			if (filters[columnIndex] === value) {
+				delete filters[columnIndex];
+				button.classList.remove('active');
+			} else {
+				// If there's an existing filter for that column, remove its active class
+				if (filters[columnIndex]) {
+					const oldValue = filters[columnIndex];
+					const oldButton = document.querySelector(
+						`.button.button-primary.active[data-column='${columnIndex}'][data-value='${oldValue}']`
+					);
+					if (oldButton) {
+						oldButton.classList.remove('active');
+					}
+				}
+				// Apply the new filter
+				filters[columnIndex] = value;
+				button.classList.add('active');
 			}
-			// Apply the new filter
-			filters[columnIndex] = value;
-			button.classList.add('active');
-		  }
-		  applyFilters();
+			applyFilters();
 		};
-	  
+
 		// Apply filters function
 		function applyFilters() {
-		  for (const columnIndex in filters) {
-			$('#strategy-table').DataTable().column(columnIndex).search(filters[columnIndex]);
-		  }
-		  $('#strategy-table').DataTable().draw();
+			for (const columnIndex in filters) {
+				$('#strategy-table').DataTable().column(columnIndex).search(filters[columnIndex]);
+			}
+			$('#strategy-table').DataTable().draw();
 		}
-	  
+
 		// Reset all filters function
 		window.resetFilters = function () {
-		  // Clear filters
-		  for (const columnIndex in filters) {
-			$('#strategy-table').DataTable().column(columnIndex).search('');
-			delete filters[columnIndex];
-		  }
-		  $('#strategy-table').DataTable().draw();
-	  
-		  // Remove 'active' class from all filter buttons
-		  const buttons = document.querySelectorAll('.button.button-primary');
-		  buttons.forEach(btn => btn.classList.remove('active'));
+			// Clear filters
+			for (const columnIndex in filters) {
+				$('#strategy-table').DataTable().column(columnIndex).search('');
+				delete filters[columnIndex];
+			}
+			$('#strategy-table').DataTable().draw();
+
+			// Remove 'active' class from all filter buttons
+			const buttons = document.querySelectorAll('.button.button-primary');
+			buttons.forEach(btn => btn.classList.remove('active'));
 		};
-	  </script>
+	</script>
 
 
-<!-- Menu Divider row -->
-<div class="divider" id="Menu" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)); background-repeat: no-repeat; background-size: cover">
-	<div class="container">
-	  <div class="twelve columns center-align">
-		<div class="divider-header">
-		  <h2 class="inline-text">Menu of strategies</h2>
-		</div>
-		<h5>
-		  This menu was informed by extensive community reflection, input and feedback from residents, employers, developers, financing experts, and policymakers. It is a starting point for officials to begin meaningful conversations about homes needs in their communities. These strategies are geared toward helping shape the future of homes to meet workforce demands across Northern Kentucky.
-		</h5>
-	  </div>
-  
-	  <!-- Filter panel -->
-	  <div class="filter-panel">
-		<!-- housing type -->
-		<p class="filter-header">Filter by strategies by housing type</p>
-		<div class="filter-buttons" data-filter-group="housing-type">
-		  <button class="button button-primary"
-				  data-column="2"
-				  data-value="Housing maintenance">
-			Housing maintenance
-		  </button>
-		  <button class="button button-primary"
-				  data-column="2"
-				  data-value="New construction">
-			New construction
-		  </button>
-		  <button class="button button-primary"
-				  data-column="2"
-				  data-value="All types of housing">
-			All types of housing
-		  </button>
-		</div>
-  
-		<!-- lead partner -->
-		<p class="filter-header">Filter by strategies by lead partner</p>
-		<div class="filter-buttons" data-filter-group="lead-partner">
-		  <button class="button button-primary"
-				  data-column="3"
-				  data-value="Local">
-			Local
-		  </button>
-		  <button class="button button-primary"
-				  data-column="3"
-				  data-value="Regional and non-profit">
-			Regional and non-profit
-		  </button>
-		  <button class="button button-primary"
-				  data-column="3"
-				  data-value="State">
-			State
-		  </button>
-		  <button class="button button-primary"
-				  data-column="3"
-				  data-value="Federal">
-			Federal
-		  </button>
-		  <button class="button button-primary"
-				  data-column="3"
-				  data-value="Any type of lead partner">
-			Any type of lead partner
-		  </button>
-		</div>
-  
-		<!-- commitment -->
-		<p class="filter-header">Filter by strategies by commitment</p>
-		<div class="filter-buttons" data-filter-group="commitment">
-		  <button class="button button-primary"
-				  data-column="4"
-				  data-value="Policies">
-			Policies
-		  </button>
-		  <button class="button button-primary"
-				  data-column="4"
-				  data-value="Best practices">
-			Best practices
-		  </button>
-		  <button class="button button-primary"
-				  data-column="4"
-				  data-value="Financing">
-			Financing
-		  </button>
-		</div>
-  
-		<!-- reset button -->
-		<div class="filter-buttons">
-		  <button class="button button-primary" id="reset-filters">
-			Reset all filters
-		  </button>
-		</div>
-	  </div>
-  
-	  <!-- Table structure -->
-	  <table id="strategy-table" class="display" style="width:100%">
-		<thead>
-		  <tr>
-			<th>Theme</th>
-			<th>Strategy</th>
-			<th>Strategies by housing type</th>
-			<th>Strategies by lead partner</th>
-			<th>Strategies by commitment</th>
-		  </tr>
-		</thead>
-	  </table>
-  
-	  <script>
-		document.addEventListener('DOMContentLoaded', function () {
-		  let table;
-		  const activeFilters = new Map();
-  
-		  // Define category colors
-		  const categoryColors = {
-			'housing-type': '#e6f3ff',    // Light blue
-			'lead-partner': '#fff0e6',    // Light orange
-			'commitment': '#e6ffe6'       // Light green
-		  };
-  
-		  fetch('nkystrategies.json')
-			.then((response) => response.json())
-			.then((data) => {
-			  table = $('#strategy-table').DataTable({
-				data: data,
-				columns: [
-				  { data: 'Theme' },
-				  {
-					data: 'Strategy',
-					render: function (data, type, row) {
-					  if (type === 'display') {
-						const parts = data.split(':');
-						const boldPart = parts[0] + ':';
-						const rest = parts.slice(1).join(':').replace(/\\n/g, '<br>');
-						return '<strong>' + boldPart + '</strong>' + rest;
-					  }
-					  return data;
-					}
-				  },
-				  { 
-					data: 'Strategies by housing type',
-					createdCell: function(td, cellData, rowData, row, col) {
-					  $(td).css('background-color', categoryColors['housing-type']);
-					}
-				  },
-				  { 
-					data: 'Strategies by lead partner',
-					createdCell: function(td, cellData, rowData, row, col) {
-					  $(td).css('background-color', categoryColors['lead-partner']);
-					}
-				  },
-				  { 
-					data: 'Strategies by commitment',
-					createdCell: function(td, cellData, rowData, row, col) {
-					  $(td).css('background-color', categoryColors['commitment']);
-					}
-				  }
-				],
-				paging: false,
-				responsive: true
-			  });
-  
-			  // Add click handlers for filter buttons
-			  document.querySelectorAll('.filter-buttons .button-primary').forEach(button => {
-				button.addEventListener('click', function() {
-				  const column = this.getAttribute('data-column');
-				  const value = this.getAttribute('data-value');
-				  
-				  // Toggle active state and filter
-				  if (this.classList.contains('active')) {
-					// Remove filter
-					this.classList.remove('active');
-					activeFilters.delete(column);
-					table.column(column).search('').draw();
-				  } else {
-					// Remove active class from other buttons in the same group
-					const group = this.closest('[data-filter-group]');
-					if (group) {
-					  group.querySelectorAll('.button-primary.active').forEach(btn => {
-						btn.classList.remove('active');
-					  });
-					}
-					
-					// Apply new filter
-					this.classList.add('active');
-					activeFilters.set(column, value);
-					table.column(column).search(value).draw();
-				  }
+	<!-- Menu Divider row -->
+	<div class="divider" id="Menu" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<h2 class="inline-text">Menu of strategies</h2>
+				</div>
+				<h5>
+					This menu was informed by extensive community reflection, input and feedback from residents, employers, developers, financing experts, and policymakers. It is a starting point for officials to begin meaningful conversations about homes needs in their communities. These strategies are geared toward helping shape the future of homes to meet workforce demands across Northern Kentucky.
+				</h5>
+			</div>
+
+			<!-- Filter panel -->
+			<div class="filter-panel">
+				<!-- housing type -->
+				<p class="filter-header">Filter by strategies by housing type</p>
+				<div class="filter-buttons" data-filter-group="housing-type">
+					<button class="button button-primary" data-column="2" data-value="Housing maintenance">
+						Housing maintenance
+					</button>
+					<button class="button button-primary" data-column="2" data-value="New construction">
+						New construction
+					</button>
+					<button class="button button-primary" data-column="2" data-value="All types of housing">
+						All types of housing
+					</button>
+				</div>
+
+				<!-- lead partner -->
+				<p class="filter-header">Filter by strategies by lead partner</p>
+				<div class="filter-buttons" data-filter-group="lead-partner">
+					<button class="button button-primary" data-column="3" data-value="Local">
+						Local
+					</button>
+					<button class="button button-primary" data-column="3" data-value="Regional and non-profit">
+						Regional and non-profit
+					</button>
+					<button class="button button-primary" data-column="3" data-value="State">
+						State
+					</button>
+					<button class="button button-primary" data-column="3" data-value="Federal">
+						Federal
+					</button>
+					<button class="button button-primary" data-column="3" data-value="Any type of lead partner">
+						Any type of lead partner
+					</button>
+				</div>
+
+				<!-- commitment -->
+				<p class="filter-header">Filter by strategies by commitment</p>
+				<div class="filter-buttons" data-filter-group="commitment">
+					<button class="button button-primary" data-column="4" data-value="Policies">
+						Policies
+					</button>
+					<button class="button button-primary" data-column="4" data-value="Best practices">
+						Best practices
+					</button>
+					<button class="button button-primary" data-column="4" data-value="Financing">
+						Financing
+					</button>
+				</div>
+
+				<!-- reset button -->
+				<div class="filter-buttons">
+					<button class="button button-primary" id="reset-filters">
+						Reset all filters
+					</button>
+				</div>
+			</div>
+
+			<!-- Table structure -->
+			<table id="strategy-table" class="display" style="width:100%">
+				<thead>
+					<tr>
+						<th>Theme</th>
+						<th>Strategy</th>
+						<th>Strategies by housing type</th>
+						<th>Strategies by lead partner</th>
+						<th>Strategies by commitment</th>
+					</tr>
+				</thead>
+			</table>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					let table;
+					const activeFilters = new Map();
+
+					// Define category colors
+					const categoryColors = {
+						'housing-type': '#e6f3ff',    // Light blue
+						'lead-partner': '#fff0e6',    // Light orange
+						'commitment': '#e6ffe6'       // Light green
+					};
+
+					fetch('nkystrategies.json')
+						.then((response) => response.json())
+						.then((data) => {
+							table = $('#strategy-table').DataTable({
+								data: data,
+								columns: [
+									{ data: 'Theme' },
+									{
+										data: 'Strategy',
+										render: function (data, type, row) {
+											if (type === 'display') {
+												const parts = data.split(':');
+												const boldPart = parts[0] + ':';
+												const rest = parts.slice(1).join(':').replace(/\\n/g, '<br>');
+												return '<strong>' + boldPart + '</strong>' + rest;
+											}
+											return data;
+										}
+									},
+									{
+										data: 'Strategies by housing type',
+										createdCell: function (td, cellData, rowData, row, col) {
+											$(td).css('background-color', categoryColors['housing-type']);
+										}
+									},
+									{
+										data: 'Strategies by lead partner',
+										createdCell: function (td, cellData, rowData, row, col) {
+											$(td).css('background-color', categoryColors['lead-partner']);
+										}
+									},
+									{
+										data: 'Strategies by commitment',
+										createdCell: function (td, cellData, rowData, row, col) {
+											$(td).css('background-color', categoryColors['commitment']);
+										}
+									}
+								],
+								paging: false,
+								responsive: true
+							});
+
+							// Add click handlers for filter buttons
+							document.querySelectorAll('.filter-buttons .button-primary').forEach(button => {
+								button.addEventListener('click', function () {
+									const column = this.getAttribute('data-column');
+									const value = this.getAttribute('data-value');
+
+									// Toggle active state and filter
+									if (this.classList.contains('active')) {
+										// Remove filter
+										this.classList.remove('active');
+										activeFilters.delete(column);
+										table.column(column).search('').draw();
+									} else {
+										// Remove active class from other buttons in the same group
+										const group = this.closest('[data-filter-group]');
+										if (group) {
+											group.querySelectorAll('.button-primary.active').forEach(btn => {
+												btn.classList.remove('active');
+											});
+										}
+
+										// Apply new filter
+										this.classList.add('active');
+										activeFilters.set(column, value);
+										table.column(column).search(value).draw();
+									}
+								});
+							});
+
+							// Reset filters
+							document.getElementById('reset-filters').addEventListener('click', function () {
+								// Clear all active states
+								document.querySelectorAll('.button-primary.active').forEach(button => {
+									button.classList.remove('active');
+								});
+
+								// Clear all filters
+								activeFilters.clear();
+								table.search('').columns().search('').draw();
+							});
+						});
 				});
-			  });
-  
-			  // Reset filters
-			  document.getElementById('reset-filters').addEventListener('click', function() {
-				// Clear all active states
-				document.querySelectorAll('.button-primary.active').forEach(button => {
-				  button.classList.remove('active');
-				});
-  
-				// Clear all filters
-				activeFilters.clear();
-				table.search('').columns().search('').draw();
-			  });
-			});
-		});
-	  </script>
-  
-	  <style>
-		.filter-panel {
-		  margin: 20px 0;
-		}
-		.filter-header {
-		  margin: 0;
-		  font-size: 1rem;
-		  font-weight: 400;
-		  margin-bottom: 5px;
-		}
-		.filter-buttons {
-		  margin-bottom: 1rem;
-		  display: flex;
-		  flex-wrap: wrap;
-		  align-items: center;
-		  gap: 8px;  /* Reduced gap */
-		}
-		
-		/* Button styles for each category */
-		[data-filter-group="housing-type"] .button-primary {
-		  background-color: #e6f3ff;
-		  color: #333;
-		  border: 1px solid #ccc;
-		  padding: 5px 10px;  /* Reduced padding */
-		  font-size: 0.9rem;  /* Slightly smaller font */
-		}
-		
-		[data-filter-group="lead-partner"] .button-primary {
-		  background-color: #fff0e6;
-		  color: #333;
-		  border: 1px solid #ccc;
-		  padding: 5px 10px;
-		  font-size: 0.9rem;
-		}
-		
-		[data-filter-group="commitment"] .button-primary {
-		  background-color: #e6ffe6;
-		  color: #333;
-		  border: 1px solid #ccc;
-		  padding: 5px 10px;
-		  font-size: 0.9rem;
-		}
-  
-		/* Active state styling */
-		.button.button-primary.active {
-		  border: 2px solid #000 !important;
-		  font-weight: bold;
-		}
-  
-		/* Reset button styling */
-		#reset-filters {
-		  background-color: #f8f9fa;
-		  color: #333;
-		  border: 1px solid #ccc;
-		  padding: 5px 10px;
-		  font-size: 0.9rem;
-		}
-  
-		/* Hover effects */
-		.button-primary:hover {
-		  opacity: 0.9;
-		  cursor: pointer;
-		}
-  
-		@media (max-width: 750px) {
-		  .filter-buttons {
-			flex-direction: column;
-			align-items: flex-start;
-		  }
-		}
-  
-		/* Table header styling */
-		#strategy-table thead th:nth-child(3) {
-		  background-color: #e6f3ff;
-		}
-		#strategy-table thead th:nth-child(4) {
-		  background-color: #fff0e6;
-		}
-		#strategy-table thead th:nth-child(5) {
-		  background-color: #e6ffe6;
-		}
-	  </style>
+			</script>
+
+			<style>
+				.filter-panel {
+					margin: 20px 0;
+				}
+
+				.filter-header {
+					margin: 0;
+					font-size: 1rem;
+					font-weight: 400;
+					margin-bottom: 5px;
+				}
+
+				.filter-buttons {
+					margin-bottom: 1rem;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					gap: 8px;
+					/* Reduced gap */
+				}
+
+				/* Button styles for each category */
+				[data-filter-group="housing-type"] .button-primary {
+					background-color: #e6f3ff;
+					color: #333;
+					border: 1px solid #ccc;
+					padding: 5px 10px;
+					/* Reduced padding */
+					font-size: 0.9rem;
+					/* Slightly smaller font */
+				}
+
+				[data-filter-group="lead-partner"] .button-primary {
+					background-color: #fff0e6;
+					color: #333;
+					border: 1px solid #ccc;
+					padding: 5px 10px;
+					font-size: 0.9rem;
+				}
+
+				[data-filter-group="commitment"] .button-primary {
+					background-color: #e6ffe6;
+					color: #333;
+					border: 1px solid #ccc;
+					padding: 5px 10px;
+					font-size: 0.9rem;
+				}
+
+				/* Active state styling */
+				.button.button-primary.active {
+					border: 2px solid #000 !important;
+					font-weight: bold;
+				}
+
+				/* Reset button styling */
+				#reset-filters {
+					background-color: #f8f9fa;
+					color: #333;
+					border: 1px solid #ccc;
+					padding: 5px 10px;
+					font-size: 0.9rem;
+				}
+
+				/* Hover effects */
+				.button-primary:hover {
+					opacity: 0.9;
+					cursor: pointer;
+				}
+
+				@media (max-width: 750px) {
+					.filter-buttons {
+						flex-direction: column;
+						align-items: flex-start;
+					}
+				}
+
+				/* Table header styling */
+				#strategy-table thead th:nth-child(3) {
+					background-color: #e6f3ff;
+				}
+
+				#strategy-table thead th:nth-child(4) {
+					background-color: #fff0e6;
+				}
+
+				#strategy-table thead th:nth-child(5) {
+					background-color: #e6ffe6;
+				}
+			</style>
+		</div>
 	</div>
-  </div>
-  
-  
+
+	<!-- 
+╭────────────────────────╮
+|START OF CALL OUT BOXES |
+╰────────────────────────╯
+-->
+
+	<div class="divider" style="margin-top: 0%; padding-top: 8;">
+
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<h3 class="inline-text">Spotlight on important strategies</h3>
+				</div>
+				<h5>
+					More information about selected high impact strategies in the menu.
+				</h5>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row insight-box">
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Regional Housing Trust Fund</h3>
+				</div>
+				<div class="twelve columns two-column-text" style="margin-top: 2%; margin-left: 0;">
+					<p>One of the strongest ideas to emerge is a <b>Regional Housing Trust Fund</b></p>
+					<p>Across the country, communities are creating Housing Trust Funds, which vary widely in their use to promote housing production. Over the last year, as committees met to explore the menu of strategies to address Northern Kentucky’s housing gap, there was cross-cutting support for establishing a Regional Housing Trust Fund. There was a desire for a fund to be administered through The Catalytic Fund of Northern Kentucky or another Community Development Financial Institution (CDFI).</p>
+					<p>The committees identified several prioritized uses for the fund, including the following:</p>
+					<ul>
+						<li>Serve as gap or below-market rate financing for new construction or renovation of income-aligned housing, including appraisal gap financing</li>
+						<li>Offer very low or no-interest debt, forgivable loans, or grant subsidies that could leverage or align with the layering of other funding available through the Kentucky Housing Corporation, Federal Home Loan Bank, and beyond</li>
+						<li>Offer create incentives for new development or redevelopment that address the housing gap or preserve income-aligned housing inventory</li>
+						<li>Support down payment assistance for homeownership</li>
+						<li>Emergency rent assistance or weatherization help for older adults or families facing the threat of eviction or homelessness</li>
+						<li>Resources that would be accessible to landlords who accept Housing Choice Vouchers so that if damage is done to their property, funds could be accessible for needed repairs</li>
+					</ul>
+					<p>To ensure the funds are targeted to address the gaps identified by the 2023 Housing Data Study, it was suggested that grants or forgivable loans be prioritized, followed by low or no-interest debt.</p>
+					<p><strong>Possible Sources of Funds</strong></p>
+					<p>To be effective, a Regional Housing Trust Fund would require sufficient resources to ignite development and address our gap in the right price points in key locations near amenities and employment centers.</p>
+					<p>Possible funding sources could include employers, local, state, or federal grants, private philanthropy, or even funds generated through an Industrial Revenue Bond (IRB) pilot project that could create revenue as a fee from developers.</p>
+				</div>
+			</div>
+			<div class="row insight-box">
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Small developer support</h3>
+				</div>
+				<div class="twelve columns two-column-text" style="margin-top: 2%; margin-left: 0;">
+					<p>There is widespread agreement that the current shortage of housing can be traced back to the impact of the Great Recession in 2008-2009. One of the specific impacts from that economic downturn was the flight of smaller developers and those in construction trades from the industry. Lack of sufficient workforce in residential construction drives up costs and the time to build new homes.&nbsp;<br>While Northern Kentucky has strong institutions supporting the trades, such as Kentucky Community And Technical College System (KCTCS), Enzweiler Building Institute, and Trades NKY, over the past year, the New Development Committee (see page 16), discussed workforce strategies to support more growth in the construction trades industry.&nbsp;<br>This effort will create stable, well-paying jobs while addressing market demand for adaptive reuse, in-fill and customized home builds not typically taken on by larger home builders.</p>
+					<p>Ideas for supporting small developers include:</p>
+					<ul>
+						<li>Facilitate pre-development capital for small-scale developers </li>
+						<li>Provide technical assistance for small-scale developers</li>
+						<li>Create a regional toolkit for identifying small-scale potential developments</li>
+						<li>Train local banks and planning staff and economic development departments on challenges faced by smaller developers</li>
+						<li>Consider ways to delay fees for small-scale developers</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row insight-box">
+				<div class="twelve columns" style="margin-bottom: 0%;">
+					<h3>Landlord property inventory</h3>
+				</div>
+				<div class="twelve columns two-column-text" style="margin-top: 2%; margin-left: 0;">
+					<p>Employee relocation plays a critical role in attracting and retaining the workforce essential to our region. A key focus for the Northern Kentucky Chamber of Commerce (NKY Chamber) is growing, attracting and retaining talent, which was identified by members as the number one concern in the annual member survey. As the second-largest chamber of commerce in the Cincinnati MSA, and the third largest in the Commonwealth of Kentucky, the NKY Chamber represents more than 1,750 member businesses. It promotes and supports the development of strong businesses and a vibrant economy in the Northern Kentucky region.</p>
+					<p>Relocation is a cornerstone of talent attraction and retention, impacting businesses of all sizes. As we look toward recruiting and retaining businesses in our region, we know that housing availability ranks among the top 10 location factors for companies during the site selection process, according to Site Selection Magazine.</p>
+					<p>Northern Kentucky’s workforce reflects the diversity of its businesses, from entry-level employees to executives. This mix requires housing that meets a wide range of preferences – including rental.</p>
+					<p>To address this need, the creation of a Landlord Property Inventory, a centralized resource where community partners and individuals can easily access housing options based on searchable categories like housing type, rental rates and fees, size, distance from employment hubs, school district and even if that landlord accepts Housing Choice Vouchers - would have a tremendous positive impact.</p>
+					<p>This resource would foster connections between available properties and tenants needing housing at all price points, supporting not just those looking to relocate, but also those within our community struggling to secure housing.</p>
+					<p>A robust inventory would support talent in our region, thereby enhancing our region’s&nbsp;&nbsp;competitiveness in the global economy. Additionally, if this directory were populated fully, it could help regional leaders see where we are depleted of certain types of housing in specific areas.</p>
+					<p>NKY Chamber and its partners already invest in talent resources like:&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://livability.com/">Livability Magazine</a> and&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://livehere.northernkentuckyusa.com/">Living in Northern Kentucky.&nbsp;</a>Developing tools like the Landlord Property Inventory will continue to strengthen the region’s appeal for businesses and talent, ensuring a thriving and vibrant community.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 
 	<!-- Footer
+
+
+
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 	<div class="footer" style="background:linear-gradient(to right,white 80%,rgba(34, 124, 157,.1)), url(images/client/cover-image.jpg);">
