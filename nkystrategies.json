@@ -1,28 +1,28 @@
 [
   {
     "Theme": "Address and prevent neighborhood blight",
-    "Strategy": "01. Proactive Code Enforcement:\nPursue proactive Code Enforcement to avoid demolition by neglect. Fix buildings and put them back on the market.",
+    "Strategy": "01. Proactive Code Enforcement:\nPursue proactive code enforcement to avoid demolition by neglect. Strive to fix buildings and put them back on the market.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Address and prevent neighborhood blight",
-    "Strategy": "02. Short-Term Rental Partnerships:\nEstablish creative partnerships with short-term rentals when they have vacancies.",
+    "Strategy": "02. Short-Term Rental Partnerships:\nEstablish creative partnerships with short-term rentals when they have vacancies for people in a housing transition or new to the area.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Address and prevent neighborhood blight",
-    "Strategy": "03. Nonprofit Property Acquisition:\nAllow nonprofit developers first right of refusal for properties under foreclosure auction or tax lien sales.",
+    "Strategy": "03. Nonprofit Property Acquisition:\nConsider programs that would allow nonprofit developers first right of refusal for properties under foreclosure auction or tax lien sales. ",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Building permits and inspections",
-    "Strategy": "04. Expedited Permitting Process:\nWork with building departments and planning commissions to identify expedient and cost effective options for permitting and code enforcement.",
+    "Strategy": "04. Expedited Permitting Process:\nWork with building departments and planning commissions to identify expedient and cost effective processes for permitting, building inspections and code enforcement.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
@@ -36,49 +36,49 @@
   },
   {
     "Theme": "Building permits and inspections",
-    "Strategy": "06. Energy Code Cost Review:\nAs 2021 national uniform energy, electric and building codes are being considered, ensure the review considers cost impact on housing.",
+    "Strategy": "06. Energy Code Cost Review:\nAs 2021 national uniform energy, electric and building codes are being considered at the state level, ensure the review considers the cost impact on residential structures and new housing supply.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Building permits and inspections",
-    "Strategy": "07. Property Assessment Deferral:\nConsider working with Property Valuation Administrators on policy that delays increased property assessments on unsold lot inventories in larger development projects until they are sold.",
+    "Strategy": "07. Property Assessment Deferral:\nConsider working with Property Valuation Administrators on policies that could delay increased property assessments on unsold lot inventories in larger development projects until they are sold and the increased value is realized.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Enhance communication and awareness",
-    "Strategy": "08. Stakeholder Idea Sharing:\nOrganize and align education, engagement and sharing of ideas between local officials, landlords​, employers and nonprofit organizations.",
+    "Strategy": "08. Stakeholder Idea Sharing:\nContinue to organize and align education, engagement and sharing of ideas between local officials, landlords​, employers and nonprofit organizations to foster ongoing collaboration.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Best practices"
   },
   {
     "Theme": "Enhance communication and awareness",
-    "Strategy": "09. Landlord Property Inventory:\nMaintain a landlord contact list and vacant property inventory to foster the connection between available properties and tenants in need of housing at all price points.",
+    "Strategy": "09. Landlord Property Inventory:\nMaintain a community landlord contact list and vacant property inventory to foster the connection between available properties and tenants in need of housing at all price points.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Enhance communication and awareness",
-    "Strategy": "10. Local Official Input:\nSurvey local officials for their input and appetite for new approaches.",
+    "Strategy": "10. Public Input:\nSurvey local stakeholders for their input, ideas, and appetite for new approaches.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Best practices"
   },
   {
     "Theme": "Enhance communication and awareness",
-    "Strategy": "11. Section 8 Awareness Campaign:\nIncrease community education about how HUD Section 8 Housing Choice Vouchers can be used for the purpose of decrease negative stereotypes and increase utilization.",
+    "Strategy": "11. Section 8 Awareness Campaign:\nIncrease community education about how HUD Section 8 Housing Choice Vouchers can be used, including for home ownership, for the purpose of decreased negative stereotypes and increased utilization.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Best practices"
   },
   {
     "Theme": "Community engagement",
-    "Strategy": "12. Development Agencies Education:\nContinue efforts to educate elected officials, planning commissioners and the public on roles of various agencies, vocabulary on development types, etc.",
+    "Strategy": "12. Community Engagement:\nContinue to engage key stakeholders and the public in Northern Kentucky to ensure housing market conditions as well as existing resources, innovative development opportunities and strategies are known and understood.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Best practices"
@@ -92,7 +92,7 @@
   },
   {
     "Theme": "Homeownership assistance programs",
-    "Strategy": "14. First-Time Homeownership Support:\nExplore ways to maximize existing support and/or establish new funding for first-time homeownership or homeownership after number of years not owning a home",
+    "Strategy": "14. First-Time Homeownership Support:\nExplore ways to maximize existing support and/or establish new funding for first-time homeownership or for long-time homeowners who after many years are purchasing a new smaller or more physically accessible dwelling.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Any type of lead partner",
     "Strategies by commitment": "Financing"
@@ -106,7 +106,7 @@
   },
   {
     "Theme": "Homeownership assistance programs",
-    "Strategy": "16. Local Housing Trust Fund:\nEstablish a local Housing Trust Fund – that could encourage and incentivize the purchase or renovation of properties (single and multi-family) that could preserve affordability and stabilize rents.",
+    "Strategy": "16. Local Resources for Homeownership:\nEstablish locally funded and managed resources for homeownership – that could encourage and incentivize the purchase or renovation of properties (single and multi-family) that could preserve affordability, stabilize rents and lead families toward home ownership.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Financing"
@@ -120,35 +120,35 @@
   },
   {
     "Theme": "Homeownership assistance programs",
-    "Strategy": "18. Utility Assistance Expansion:\nConsider state support for additional weatherization/utility assistance funds for use by landlords and homeowners through Northern Kentucky Community Action Commission (NKCAC). Investing on keeping people in their homes.",
+    "Strategy": "18. Utility Assistance Expansion:\nEncourage state support for additional weatherization/utility assistance funds for use by landlords and homeowners through Northern Kentucky Community Action Commission (NKCAC) and other partners investing in keeping people in their homes.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Public housing effectiveness",
-    "Strategy": "19. Landlord Participation Incentives:\nConsider establishment of incentives within housing choice voucher programs to encourage landlord participation in subsidized housing.",
+    "Strategy": "19. Landlord Participation Incentives:\nConsider establishment of incentives within Housing Choice Voucher programs to encourage landlord participation in subsidized housing.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Any type of lead partner",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Public housing effectiveness",
-    "Strategy": "20. Tenant-Landlord Risk Mitigation:\nConsider establishment of risk mitigation fund within housing choice voucher programs or through a local housing trust fund to support landlords and tenants.",
+    "Strategy": "20. Tenant-Landlord Risk Mitigation:\nConsider establishment of a risk mitigation fund within Housing Choice Voucher programs or through a housing trust fund to support landlords and tenants.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Any type of lead partner",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Public housing effectiveness",
-    "Strategy": "21. Family Self-Sufficiency Program:\nIncrease local access to / availability of HUD Family Self Sufficiency (FSS) program to help mitigate the Cliff Effect.",
+    "Strategy": "21. Family Self-Sufficiency Program:\nIncrease local access to and availability of HUD Family Self Sufficiency (FSS) program to help mitigate the Cliff Effect.",
     "Strategies by housing type": "Housing maintenance",
     "Strategies by lead partner": "Federal",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Public housing effectiveness",
-    "Strategy": "22. Project-based housing choice vouchers:\nSupport the development of new income-aligned housing units for the local workforce and their families or for the creation of senior housing through the use of subsidies such as project-based housing choice vouchers.",
+    "Strategy": "22. Project-based housing choice vouchers:\nSupport development of new income-aligned housing units for the local workforce and their families and/or for senior housing through the use of subsidies such as project-based Housing Choice Vouchers.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Financing"
