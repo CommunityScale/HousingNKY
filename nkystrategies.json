@@ -162,7 +162,7 @@
   },
   {
     "Theme": "Planning and zoning",
-    "Strategy": "24. Creative Zoning Approaches:\nExplore creative zoning approaches that result in increased housing supply.",
+    "Strategy": "24. Creative Zoning and Regulations:\nExplore creative zoning and regulation approaches, including for subdivisions, that result in increased housing supply.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
@@ -176,35 +176,35 @@
   },
   {
     "Theme": "Planning and zoning",
-    "Strategy": "26. Form-Based Zoning:\nForm-based rather than use-based zoning to encourage density and project-type variety, such as missing middle housing.",
+    "Strategy": "26. Mixed Use Zoning:\nFEncourage mixed use zoning that allows a variety of uses to encourage density and project-type variety, such as missing middle housing and commercial, through tools like form-based codes or PUDs.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Planning and zoning",
-    "Strategy": "27. Accessory Dwelling Units (ADU’s):\nAllow by right (preferred) or conditional use to encourage family members co-locating on same property and free up existing housing stock while also developing controls to moderate short term rental conversions when necessary..",
+    "Strategy": "27. Accessory Dwelling Units (ADU’s):\nAllow ADUs by right (preferred) or conditional use to encourage family members co-locating on same property and free up existing housing stock while also developing controls to moderate short term rental conversions when necessary.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Planning and zoning",
-    "Strategy": "28. Streamlined Approval Process:\nStreamline the zoning and approval process to increase capacity and pace of development.",
+    "Strategy": "28. Streamlined Approval Process:\nStreamline zoning and approval processes when possible to increase capacity and pace of development.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Planning and zoning",
-    "Strategy": "29. Affordable Housing Incentives:\nIncentivize housing affordability through targeted funding and density bonuses where appropriate.",
+    "Strategy": "29. Housing Incentives:\nIncentivize housing affordability through targeted funding and density bonuses where appropriate.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "30. Regional Housing Trust Fund:\nEstablish Community Land Trust aka Housing Trust Fund that could offer gap financing through grants, low/no interest debt, or forgivable loans and/or provide funding for low to moderate income housing product or support infrastructure improvements.",
+    "Strategy": "30. Regional Housing Trust Fund:\nEstablish a flexible source of financing to serve the region as a  Housing Trust Fund that could offer gap financing through grants, low/no interest debt, or forgivable loans and/or provide funding for maintaining low to moderate income housing product and support new development.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Financing"
@@ -225,63 +225,63 @@
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "33. HOME Fund Allocation:\nIncrease funding through HOME Investment Partnerships Program (HOME) fund allocation for consortiums based on number of cities and populations connected.",
+    "Strategy": "33. HOME Fund Allocation:\nIncrease funding through Home Investment Partnerships Program (HOME) fund allocation for consortiums based on number of cities and populations connected.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "Federal",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "34. Community Investment Credit:\nCreate a Kentucky Community Investment Credit similar to TN model. Provides a credit against the sum total of state bank deposit and franchise tax. Credit is imposed by the Franchise and Excise Tax Laws when qualified loans, qualified investments, grants, or contributions are extended to eligible housing entities for engaging in eligible low-income or senior housing activities.",
+    "Strategy": "34. Community Investment Credit:\nCreate a Kentucky Community Investment Credit similar to Tennessee model. Provides a credit against the sum total of state bank deposit and franchise tax. Credit is imposed by the Franchise and Excise Tax Laws when qualified loans, qualified investments, grants, or contributions are extended to eligible housing entities for engaging in eligible low-income or senior housing activities.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "35. Innovative Housing Pilots:\nEstablish innovative housing pilot projects to explore wider variety of housing types and price points aligned with community will and monitor results. Encourage collaboration between local governments, planning entities and developers to explore new projects on properties already available for new construction.",
+    "Strategy": "35. Innovative Housing Pilots:\nEstablish innovative residential pilot projects to explore wider variety of housing types and price points aligned with community will and monitor results. Encourage collaboration between local governments, planning entities, developers and financing entities to explore new projects on properties already available for new construction.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "36. Local Capacity Leveraging:\nLeverage existing local capacity to promote and advance income-aligned housing goals through organizations such as non-profit developers, NKY Port Authority, Catalytic Fund, and others.",
+    "Strategy": "36. Local Capacity Leveraging:\nLeverage existing local capacity to promote and advance income-aligned housing goals through organizations such as nonprofit developers, NKY Port Authority, Catalytic Fund, and others.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Best practices"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "37. Adaptive Reuse:\nEncourage the repurposement and adaptive reuse of existing, underutilized properties for residential projects.",
+    "Strategy": "37. Adaptive Reuse:\nEncourage the repurpose and adaptive reuse of existing, underutilized properties for residential projects.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "38. Tax Incentive Strategies:\nUse existing legislation/authorization to issue local incentives such as Industrial Revenue Bonds (IRBs) or use Tax Increment Financing (TIF) to reduce property tax liability to qualifying projects. or Establish incentives or requirements for income-aligned housing using tools such as tax abatements and exemptions.",
+    "Strategy": "38. Tax Incentive Strategies:\nCommunities may consider issuance of local incentives such as Industrial Revenue Bonds (IRBs) or use Tax Increment Financing (TIF) to reduce property tax liability to qualifying projects. Consider establishing incentives related to income-aligned housing.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "39. Public Land Allocation:\nConsider dedication of or increased ease of using publicly-owned land such as right-of-way or university land for housing.",
+    "Strategy": "39. Public Land Allocation:\nConsider dedication of or increased ease of using publicly owned land such as right-of-way or university land for housing.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Any type of lead partner",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "40. Housing Corporation Advocacy:\nIn the Kentucky Housing Corporation (KHC) Qualified Allocation Plan (QAP), advocate for NKY to be separated by County so more dollars can be brought to the region for income-aligned housing (AHTF, HOME, LIHTC), broader AMI range for projects, and re-establish the scoring formula in the QAP.",
+    "Strategy": "40. Kentucky Housing Corporation Advocacy:\nIn the Kentucky Housing Corporation (KHC) Qualified Allocation Plan (QAP), advocate for NKY to be separated by county so more dollars can be brought to the region from state and federal housing grants (AHTF, HOME, LIHTC), broader AMI range for projects, and re-establish the scoring formula in the QAP.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Tools and incentives",
-    "Strategy": "41. Community Development Block Grants (CDBG):\nPursue ways to allow cities and counties to apply for more than one Community Development Block Grant at a time to support projects with housing included. Expand access to CDBG funds for areas of high economic growth potential.",
+    "Strategy": "41. Community Development Block Grants (CDBG):\nPursue ways to allow cities and counties to apply for more than one CDBG at a time to support projects with housing included. Expand capacity for cities and counties to apply for CDBG funds to support priority projects by partnering with Northern Kentucky Area Development District’s CDBG-certified staff.",
     "Strategies by housing type": "All types of housing",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Financing"
@@ -295,7 +295,7 @@
   },
   {
     "Theme": "Transportation and infrastructure",
-    "Strategy": "43. Traffic Count Efficiency:\nConsider use of traffic counts from recent projects within a particular timeframe to avoid delays.",
+    "Strategy": "43. Traffic Count Efficiency:\nRequest KYTC consider use of traffic counts from recent projects in the same area within a particular timeframe to avoid delays.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Local",
     "Strategies by commitment": "Policies"
@@ -309,21 +309,21 @@
   },
   {
     "Theme": "Transportation and infrastructure",
-    "Strategy": "45. Local Planning Collaboration:\nWork with Kentucky Transportation Cabinet to involve local planning jurisdictions on KYTC’s encroachment and improvement requirements.",
+    "Strategy": "45. Local Planning Collaboration:\nWork with KYTC to involve local planning jurisdictions on KYTC’s encroachment and improvement requirements.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Best practices"
   },
   {
     "Theme": "Transportation and infrastructure",
-    "Strategy": "46. Utility Connection Assistance:\nEstablish funding and/or enhance existing assistance with connections to public water or sewer utility for homebuyers/home owners to reduce barriers to construction and home ownership.",
+    "Strategy": "46. Utility Connection Assistance:\nEstablish funding and/or enhance existing assistance with connections to public water or sewer utility for homebuyers/homeowners to reduce barriers to construction and homeownership.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Workforce development",
-    "Strategy": "47. Small Developer Support:\nSupport existing and increase the number of small residential developers in the NKY housing industry in order to encourage a wider variety of housing types and price points.",
+    "Strategy": "47. Small Developer Support:\nSupport existing and increase the number of small residential developers in the Northern Kentucky housing industry in order to encourage a wider variety of housing types and price points.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Regional and non-profit",
     "Strategies by commitment": "Policies"
@@ -337,14 +337,14 @@
   },
   {
     "Theme": "Workforce development",
-    "Strategy": "49. Construction Training Funding:\nEnhance existing funding for construction and trades training by creation of additional funding for construction workforce training.",
+    "Strategy": "49. Construction Training Funding:\nEnhance existing funding for construction and trades training through creation of additional funding for construction workforce training.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "Any type of lead partner",
     "Strategies by commitment": "Financing"
   },
   {
     "Theme": "Workforce development",
-    "Strategy": "50. Apprenticeship Program Enhancement:\nH.R. 6285 Bipartisan Workforce Pell Act - needs amending to 26-week programming for apprenticeship",
+    "Strategy": "50. Apprenticeship Program Enhancement:\nAdvocate for federal legislation supporting training programs, such as allowing 26-week programming for apprenticeships to qualify for federal financial aid. Partner with the Northern Kentucky Workforce Investment Board to access existing funds for apprenticeships.",
     "Strategies by housing type": "New construction",
     "Strategies by lead partner": "State",
     "Strategies by commitment": "Policies"
